@@ -73,7 +73,7 @@ public struct AnimateText<E: ATTextAnimateEffect>: View {
             if !isChanged {
                 Text(text)
                     .takeSize($size)
-            .multilineTextAlignment(.center)
+            .multilineTextAlignment(.leading)
             }else {
                 GeometryReader { geometry in
                     VStack(alignment: .leading, spacing: 0) {
